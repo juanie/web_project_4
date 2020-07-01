@@ -1,0 +1,109 @@
+.page{
+  background:#000000;
+  color: white;
+} 
+.header {
+  padding-top: 45px;
+  padding-bottom: 0;
+  max-width: 882px;
+   margin-left: 202px;
+  border-bottom: 1px solid hsla(0, 0%, 33%, .7);
+}
+.profile{
+  display:flex ;
+  margin: auto;
+  margin-top: 36.25px;
+  margin-bottom: 47.25px;
+}
+.profile__image{
+   width: 120px;
+   height: 120px;
+   border-radius:50%;
+  
+}
+.profile__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.profile__occupation{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFF;
+    margin: 0;
+    flex-basis: 100%;  
+  }
+  .profile__name {
+   width:380px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 56px;
+  color: #FFF;
+  
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  } 
+.profile__edit-button{
+  width: 150px;
+  height:50px;
+}
+
+/*  */
+
+.elements{
+  display: grid;
+  grid-gap: 18px;
+  grid-template-columns:repeat(auto-fit, minmax(282px,2fr));
+  margin: auto;
+  margin-bottom: 66px;
+  max-width: 882px;
+}
+
+.element{
+  background: #FFFFFF;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  max-width: 282px;
+}
+.element__title{
+  color: black;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+
+}
+.element__image{
+width: 282px;
+height: 282px;
+border-radius: 10px 10px 0px 0px;
+  }
+
+  .element__text{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
+  margin-left: 21px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+}
+.element__like-button{
+  background-image: url('./images/heart.svg');
+  background-position: center;
+  object-fit: cover; 
+  background-repeat: no-repeat;
+  border: none;
+  width: 21px;
+  height: 19px;
+  align-self: center;
+  background-color: white;
+}
