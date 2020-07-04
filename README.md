@@ -1,6 +1,6 @@
  
  Yandex Practicum  Bootcamp Project
-Sprint 5 Project: Around the U.S.
+Project 4: Around the U.S.
 
 
 

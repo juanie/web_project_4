@@ -1,4 +1,4 @@
-.elements{
+ .elements{
   display: grid;
   grid-gap: 18px;
   grid-template-columns:repeat(auto-fit, minmax(282px,2fr));
@@ -8,12 +8,10 @@
 }
 
 
-/* @media screen and (max-width:400
-px){
-  .elements{
-     max-width: 282px; 
+@media screen and (max-width: 979px){
+.elements {
+    max-width: 282px;
     grid-gap: 20px;
-    margin-left:19px;
-    margin-right: 19px;
-  }
-} */
+    padding-left: 19px;
+    padding-right: 19px;
+}}

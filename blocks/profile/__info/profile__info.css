@@ -2,17 +2,15 @@
     display: flex;
     flex-wrap: wrap;  
     max-width: 428px;
+    margin:auto;
   
 } 
- @media screen and (max-width:400px){
+  /* @media screen and (max-width:765px){
   .profile__info{
- display: flex;
+      justify-content: center;
+      align-items: center; */
+
+
+
  
-flex-wrap: wrap; 
- margin-right: 3.75px; 
-width:280px;
-height:66px;
-align-items: center;
- 
-}}
  

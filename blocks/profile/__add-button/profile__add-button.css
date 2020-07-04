@@ -1,23 +1,48 @@
 .profile__add-button{
  align-self: center;
  margin-top: 42px;
- margin-left:150px ;
 width: 150px;
 height: 50px;
 border: 2px solid #FFFFFF; 
 border-radius: 2px;
-background-image: url("/web_project_4/images/cross.svg");
+background-image: url("../../../images/cross.svg");
 color: #E5E5E5;
 box-sizing: border-box;
 background-position: center;
 object-fit: cover; 
 background-repeat: no-repeat;
 background-color:#2A2C2F;
-
- 
 }
 
+.profile__add-button:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
 
+@media screen and (max-width: 1024px){
+    .button_add {
+        margin-top: 30px;
+        background-size: 16px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 969px){
+    .button_add {
+         width: 100%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+/* @media screen and (max-width: 785px){
+    .button_add {
+     max-width:282px; 
+        margin-top: 30px;
+        margin-left:0;
+      
+    }
+} */
 
 
 
