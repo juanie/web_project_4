@@ -1,0 +1,24 @@
+.element__like-button{
+  background-image: url('/web_project_4/images/heart.svg');
+  background-position: center;
+  object-fit: cover; 
+  background-repeat: no-repeat;
+  border: none;
+  width: 21px;
+  height: 19px;
+  align-self: center;
+ 
+}
+
+@media screen and (max-width:425px){
+ .element__like-button{
+  background-image: url('./images/heart.svg');
+  background-position: center;
+  object-fit: cover; 
+  background-repeat: no-repeat;
+  border: none;
+  width: 21px;
+  height: 19px;
+  align-self: center;
+  background-color: white;
+}}
