@@ -1,9 +1,11 @@
 .popup__title{
+ width: 358px;
+height: 27.34px;
+left: 461px;
+top: 363px;
   font-style: normal;
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
   margin-bottom: 54px;
 }

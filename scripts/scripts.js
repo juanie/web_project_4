@@ -1,5 +1,6 @@
 // Let's find the form in the DOM
-// let formElement = querySelector('.popup'); // Use the querySelector() method
+let formElement = querySelector('.popup'); 
+//  Use the querySelector() method
 const popup = document.querySelector('.popup');
 const editButton = document.querySelector('.profile__edit-button');
 const closeButton = document.querySelector('.popup__close')
@@ -11,8 +12,8 @@ function formSubmitHandler (evt) {
                                                 // We'll explain it in more detail later.
 
     // Let's find the form fields in the DOM
-    let nameInput =// Use querySelector()
-    let jobInput =// Use querySelector()
+    let nameInput = querySelector('.popup__name')// Use querySelector()
+    let jobInput =  querySelector('.popup__occupation')   // Use querySelector()
 
 
     // Get the values of each field from the corresponding value property
