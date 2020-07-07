@@ -1,7 +1,10 @@
 .popup__container{ 
- z-index: 2; 
+ z-index: 3; 
   display: flex;
   flex-direction: column;
-  position: relative;
-   margin-left: 36px;
+  position: relative; 
+ margin-top:-830px;
+ margin-left:350px;
+
+
 }

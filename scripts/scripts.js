@@ -1,28 +1,48 @@
-// Let's find the form in the DOM
-let formElement = querySelector('.popup'); 
-//  Use the querySelector() method
+/* asign DOM elements */
+//assigning all DOM elements at the beginning optimizes performance
+
+//popup handler
 const popup = document.querySelector('.popup');
 const editButton = document.querySelector('.profile__edit-button');
-const closeButton = document.querySelector('.popup__close')
-// Next is the form submit handler, though
-// it won't submit anywhere just yet
-function formSubmitHandler (evt) {
+const closeButton = document.querySelector('.popup__close');
+
+//form handler
+const form = document.querySelector('.popup__form');
+const nameInput = document.querySelector('.popup__name');
+const descriptionInput = document.querySelector('.popup__about');
+const profileName = document.querySelector('.profile__name');
+const profileDescription = document.querySelector('.profile__about');
+
+
+
+/* popup handler */
+
+function popupHandler(evt){
     evt.preventDefault(); // This line stops the browser from submitting the form in the default way.
-                                                // Having done so, we can define our own way of submitting the form.
-                                                // We'll explain it in more detail later.
+    popup.classList.toggle('popup_state_opened');
+}
 
-    // Let's find the form fields in the DOM
-    let nameInput = querySelector('.popup__name')// Use querySelector()
-    let jobInput =  querySelector('.popup__occupation')   // Use querySelector()
+//add handler to edit button and close button
+editButton.addEventListener('click', popupHandler);
+closeButton.addEventListener('click', popupHandler);
 
+
+/*   form handler  */
+function formSubmitHandler (evt) {
+    evt.preventDefault(); 
 
     // Get the values of each field from the corresponding value property
-
-    // Select elements where the field values will be entered
+    const name = nameInput.value;
+    const description = descriptionInput.value;
 
     // Insert new values using the textContent property of the querySelector() method
+    profileName.textContent = name;
+    profileDescription.textContent = description;
+
+    //close window after changing values
+    popupHandler(evt);
 }
 
 // Connect the handler to the form:
 // it will watch the submit event
-formElement.addEventListener('submit', formSubmitHandler);
+form.addEventListener('submit', formSubmitHandler);

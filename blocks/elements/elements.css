@@ -1,17 +1,17 @@
  .elements{
   display: grid;
   grid-gap: 18px;
+   margin: auto;
   grid-template-columns:repeat(auto-fit, minmax(282px,2fr));
-  margin: auto;
   margin-bottom: 66px;
   max-width: 882px;
 }
 
 
-@media screen and (max-width: 979px){
+ @media screen and (max-width: 450px){
 .elements {
-    max-width: 282px;
+    max-width: 282px; 
     grid-gap: 20px;
-    padding-left: 19px;
-    padding-right: 19px;
-}}
+   margin-left:19px;
+   margin-right:19px;
+}} 

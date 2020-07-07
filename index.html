@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="pages/index.css"/> 
 
     <title>Around the U.S.</title>
 </head>
 <body class="page">
 <header class="header">
-    <img class="header__logo" src="./images/logo.svg">
+    <img class="header__logo" src="./images/logo.svg" alt="logo">
 </header>
   <section class="profile">
    
@@ -25,11 +24,10 @@
     </section>
 
  <!-- elements -->
-
     <!-- yosemite -->
     <section class="elements">
       <div class="element">
-        <img class="element__image" src="./images/ card__yosemite.jpg" alt="yosemite">
+    <img class="element__image" src="./images/card__yosemite.jpg" alt="yosemite">
         <div class="element__text">
           <h3 class="element__title">Yosemite Valley</h3>
           <button class="element__like-button"></button>
@@ -39,11 +37,10 @@
    <div class="element">
   <img class="element__image" src="./images/card__lake.jpg" alt="Lake Louise">
         <div class="element__text">
-          <h3 class="element__title"> Lake Louise</h3>
+           <h3 class="element__title"> Lake Louise</h3>
           <button class="element__like-button"></button>
         </div>
       </div>
-
       <!-- Bald Moutains -->
    <div class="element">
   <img class="element__image" src="./images/card__smoky.jpg" alt="Bald Mountains">
@@ -52,7 +49,6 @@
           <button class="element__like-button"></button>
         </div>
       </div>
-
               <!-- latemar -->
 <div class="element">
   <img class="element__image" src="./images/card__latemar.jpg" alt="Latemar">
@@ -61,7 +57,6 @@
           <button class="element__like-button"></button>
         </div>
       </div>
-
                  <!--Vanois National... -->
 <div class="element">
   <img class="element__image" src="./images/card__vanoise.jpg" alt="Vanois National...">
@@ -69,31 +64,36 @@
           <h3 class="element__title">Vanois National...</h3>
           <button class="element__like-button"></button>
         </div>
-      </div>
+       </div>
+
             <!-- Lago di Braies -->
  <div class="element">
-  <img class="element__image" src="./images/ card__lago.jpg" alt="Lago di Braies">
+  <img class="element__image" src="./images/card__lago.jpg" alt="Lago di Braies">
         <div class="element__text">
           <h3 class="element__title">Lago di Braies</h3>
           <button class="element__like-button"></button>
         </div>
       </div>
+    </section>
 </body>
 <!-- footer -->
- <footer>
-  <h4 class=footer>&copy; 2020 Around The U.S.</h4> 
 
-</footer>
+  <section class=footer>
+    <p class = "footer__copyright">
+    &copy; 2020 Around The U.S.</p>
+   
+  </section>
 <section class ="popup">
 <div class="popup__container">
    <form class="popup__form">
       <button class="popup__close"></button>
 <h2 class="popup__profile">Edit profile</h2>
-<input class="popup__name" type="text"placeholder="Name">
-<input class="popup__about"type="text"  placeholder="About me">
+<input class="popup__name" type="text" value="Jacques Cousteau ">
+<input class="popup__about" type="text"  value="Explorer">
 <button class="popup__submit-button" type="submit">Save</button>
-</div>
+
 </form>
+</div>
 </section>
 <script src="./scripts/scripts.js"></script>
 </html>

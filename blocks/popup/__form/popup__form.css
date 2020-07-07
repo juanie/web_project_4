@@ -1,5 +1,6 @@
 .popup__form{
-position: absolute;
+/* position: absolute; */
+top:195px;
 width: 430px;
 height: 330px;
  background-color: white;
@@ -7,7 +8,7 @@ height: 330px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  z-index: 2;
-  margin: auto;
-  position: relative;
+  z-index: 1;
+  
+ 
 }

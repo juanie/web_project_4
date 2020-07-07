@@ -1,6 +1,5 @@
 @import url(./__logo/header__logo.css);
 
-
 .header {
   padding-top: 40px;
   padding-bottom: 0;
@@ -8,6 +7,10 @@
   margin: auto;
   border-bottom: 1px solid hsla(0, 0%, 33%, .7);
 }
+
+
+
+
 
 @media screen and (max-width: 425px) {
   .header {

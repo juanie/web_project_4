@@ -5,11 +5,10 @@
     margin:auto;
   
 } 
-  /* @media screen and (max-width:765px){
+   @media screen and (max-width:765px){
   .profile__info{
-      justify-content: center;
-      align-items: center; */
-
+        width:320px 
+  }}
 
 
  

@@ -2,7 +2,7 @@
  align-self: center;
  margin-top: 42px;
 width: 150px;
-height: 50px;
+height: 50px; 
 border: 2px solid #FFFFFF; 
 border-radius: 2px;
 background-image: url("../../../images/cross.svg");
@@ -19,30 +19,14 @@ background-color:#2A2C2F;
   opacity: 0.6;
 }
 
-@media screen and (max-width: 1024px){
-    .button_add {
-        margin-top: 30px;
-        background-size: 16px;
-        margin-left: 200px;
+@media screen and (max-width:769px){
+    .profile__add-button{
+      width:100%;
+       margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
-
-@media screen and (max-width: 969px){
-    .button_add {
-         width: 100%;
-        margin-top: 30px;
-        margin-left: 30px;
-    }
-}
-
-/* @media screen and (max-width: 785px){
-    .button_add {
-     max-width:282px; 
-        margin-top: 30px;
-        margin-left:0;
-      
-    }
-} */
 
 
 
