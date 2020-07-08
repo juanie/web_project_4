@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;  
     max-width: 428px;
-    margin:auto;
+    margin-right: 77px;
+   
   
 } 
    @media screen and (max-width:765px){
   .profile__info{
-        width:320px 
+        width:320px; 
+         margin:auto; 
   }}
 
 
