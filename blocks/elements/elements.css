@@ -7,12 +7,9 @@
   max-width: 882px;
   
 }
-
-
- @media screen and (max-width: 450px){
+ @media screen and (max-width: 424px){
 .elements {
-    max-width: 282px; 
-    grid-gap: 20px;
-   margin-left:19px;
-   margin-right:19px;
+    width:282px; 
+   grid-gap: 20px;
+ 
 }} 
