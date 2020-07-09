@@ -2,10 +2,16 @@
  width: 430px;
  height: 330px; 
  background-color: white;
- display: flex;
+  display: flex;
   flex-direction: column;
   border-radius: 10px;
   z-index: 1;
-  
- 
 }
+
+@media screen and (max-width:320px){
+    .popup__form{
+  width: 230px;
+  height: 330px;
+ 
+
+   }} 

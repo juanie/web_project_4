@@ -8,3 +8,13 @@
    margin-right: auto;
   
 }
+@media screen and (max-width:320px){
+    .popup__name{
+  width: 158px;
+  height: 27.34px;
+   border: none;  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   margin-bottom: 29.74px;
+   margin-left: auto; 
+   margin-right: auto;
+   }}

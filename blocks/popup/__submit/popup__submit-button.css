@@ -15,3 +15,20 @@ margin-right:36px;
   cursor: pointer;
   opacity: 0.8;
 }
+@media screen and (max-width:320px){
+  .popup__submit-button{
+width: 158px;
+height: 30.15px;
+color:white;
+background-color: #000000;
+border-radius: 2px;
+margin-left:36px;
+margin-right:36px;
+margin-bottom:36px;
+
+}
+
+.popup__submit-button:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}}

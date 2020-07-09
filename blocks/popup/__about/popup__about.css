@@ -5,7 +5,14 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin-bottom: 48px;
  margin-left:36px; 
-   
-
-  
 } 
+
+@media screen and (max-width:320px){
+.popup__about{
+  width: 158px;
+  height: 27.34px;
+  border: none; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+ 
+}}
+
