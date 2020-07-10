@@ -1,102 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="pages/index.css"/> 
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pages/index.css"/> 
 
-    <title>Around the U.S.</title>
-</head>
-<body class="page">
-<header class="header">
-    <img class="header__logo" src="./images/logo.svg" alt="logo">
-</header>
-<main>
-  <section class="profile">
-   
-        <img class="profile__image" src="./images/image.jpg" alt="Jacques Cousteau">
-        <div class="profile__info">
-          <h1 class="profile__name">Jacques Cousteau</h1>
-   <button class="profile__edit-button"></button>
-          <p class="profile__occupation">Explorer</p> 
-             </div> 
-        <button class="profile__add-button"></button>
+          <title>Around the U.S.</title>
+      </head>
+      <body class="page">
+      <header class="header">
+          <img class="header__logo" src="./images/logo.svg" alt="logo">
+      </header>
+      <main>
+        <section class="profile">
          
-    </section>
+   <img class="profile__image" src="./images/image.jpg" alt="Jacques Cousteau">
+     <div class="profile__info">
+  <h1 class="profile__name">Jacques Cousteau</h1>
+  <button aria-label="Edit" class="profile__edit-button"></button>
+<p class="profile__occupation">Explorer</p> 
+                   </div> 
+              <button class="profile__add-button"></button>
+               
+          </section>
 
- <!-- elements -->
-    <!-- yosemite -->
-    <section class="elements">
+       <!-- elements -->
+          <!-- yosemite -->
+          <section class="elements">
+            <div class="element">
+          <img class="element__image" src="./images/card__yosemite.jpg" alt="yosemite">
+              <div class="element__text">
+                <h2 class="element__title">Yosemite Valley</h2>
+                <button class="element__like-button"></button>
+              </div>
+            </div>
+      <!-- lake Louise -->
+         <div class="element">
+        <img class="element__image" src="./images/card__lake.jpg" alt="Lake Louise">
+              <div class="element__text">
+                 <h2 class="element__title"> Lake Louise</h2>
+                <button class="element__like-button"></button>
+              </div>
+            </div>
+            <!-- Bald Moutains -->
+         <div class="element">
+        <img class="element__image" src="./images/card__smoky.jpg" alt="Bald Mountains">
+              <div class="element__text">
+                <h2 class="element__title">Bald Mountains</h2>
+                <button class="element__like-button"></button>
+              </div>
+            </div>
+                    <!-- latemar -->
       <div class="element">
-    <img class="element__image" src="./images/card__yosemite.jpg" alt="yosemite">
-        <div class="element__text">
-          <h2 class="element__title">Yosemite Valley</h2>
-          <button class="element__like-button"></button>
-        </div>
-      </div>
-<!-- lake Louise -->
-   <div class="element">
-  <img class="element__image" src="./images/card__lake.jpg" alt="Lake Louise">
-        <div class="element__text">
-           <h2 class="element__title"> Lake Louise</h2>
-          <button class="element__like-button"></button>
-        </div>
-      </div>
-      <!-- Bald Moutains -->
-   <div class="element">
-  <img class="element__image" src="./images/card__smoky.jpg" alt="Bald Mountains">
-        <div class="element__text">
-          <h2 class="element__title">Bald Mountains</h2>
-          <button class="element__like-button"></button>
-        </div>
-      </div>
-              <!-- latemar -->
-<div class="element">
-  <img class="element__image" src="./images/card__latemar.jpg" alt="Latemar">
-        <div class="element__text">
-          <h2 class="element__title">Latemar</h2>
-          <button class="element__like-button"></button>
-        </div>
-      </div>
-                 <!--Vanois National... -->
-<div class="element">
-  <img class="element__image" src="./images/card__vanoise.jpg" alt="Vanois National...">
-        <div class="element__text">
-          <h2 class="element__title">Vanois National...</h2>
-          <button class="element__like-button"></button>
-        </div>
-       </div>
+        <img class="element__image" src="./images/card__latemar.jpg" alt="Latemar">
+              <div class="element__text">
+                <h2 class="element__title">Latemar</h2>
+                <button class="element__like-button"></button>
+              </div>
+            </div>
+                       <!--Vanois National... -->
+      <div class="element">
+        <img class="element__image" src="./images/card__vanoise.jpg" alt="Vanois National...">
+              <div class="element__text">
+                <h2 class="element__title">Vanois National...</h2>
+                <button class="element__like-button"></button>
+              </div>
+             </div>
 
-            <!-- Lago di Braies -->
- <div class="element">
-  <img class="element__image" src="./images/card__lago.jpg" alt="Lago di Braies">
-        <div class="element__text">
-          <h2 class="element__title">Lago di Braies</h2>
-          <button class="element__like-button"></button>
-        </div>
-      </div>
-    </section>
+                  <!-- Lago di Braies -->
+       <div class="element">
+        <img class="element__image" src="./images/card__lago.jpg" alt="Lago di Braies">
+              <div class="element__text">
+                <h2 class="element__title">Lago di Braies</h2>
+                <button class="element__like-button"></button>
+              </div>
+            </div>
+          </section>
 
-<!-- footer -->
+      <!-- footer -->
 
- <footer class="footer">
-    <p class = "footer__copyright">
-    &copy; 2020 Around The U.S.</p>
- </footer>
-<section class ="popup">
-<div class="popup__container">
-   <form class="popup__form">
-      <button class="popup__close"></button>
-<h4 class="popup__profile">Edit profile</h4>
-<input class="popup__name" type="text" value="Jacques Cousteau ">
-<input class="popup__about" type="text"  value="Explorer">
-<button class="popup__submit-button" type="submit">Save</button>
-</main>
-</form>
-</div>
-</section>
+       <footer class="footer">
+          <p class = "footer__copyright">
+          &copy; 2020 Around The U.S.</p>
+       </footer>
+      <section class ="popup">
+       <div class="popup__container">
+    <form class="popup__form">
+            <button aria-label="Close" class="popup__close"></button>      
+      <h4 class="popup__profile">Edit profile</h4>
+      <input class="popup__name" type="text" value="Jacques Cousteau ">
+      <input class="popup__about" type="text"  value="Explorer">
+      <button aria-label="Save" class="popup__submit-button" type="submit">Save</button>
+       </form>
+    </div>
+      </section>
 
-<script src="./scripts/scripts.js"></script>
-
-</body>
-</html>
+      </main>
+      <script src="./scripts/scripts.js"></script>
+      </body>
+      </html>

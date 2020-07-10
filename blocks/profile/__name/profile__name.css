@@ -2,7 +2,6 @@
 display: flex;
 max-width: 380px;
 align-self: center;
-/* margin-left: auto; */
 height: 43px;
 margin-bottom:0;
 font-style: normal;
@@ -18,9 +17,9 @@ color: #FFFFFF;
 
 @media screen and (max-width: 1024px) {
   .profile__name {
-    font-size: 30px;
-    padding-right: 14px;
-    width: 267px;
+ font-size: 30px;
+ padding-right: 14px;
+ width: 267px;
   }
 }
 
@@ -30,7 +29,7 @@ color: #FFFFFF;
   .profile__name {
     font-size: 22px;
     line-height: 56px;
-    width:201px;
+    width:200px;
   
    
   }

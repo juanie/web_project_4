@@ -3,15 +3,26 @@
     flex-wrap: wrap;  
     max-width: 428px;
     margin-right: 77px;
-   
-  
 } 
-   @media screen and (max-width:765px){
+ 
+
+
+
+
+
+    @media screen and (max-width:1024px){
   .profile__info{
-        width:320px; 
-         margin:auto; 
+        max-width:480px; 
+         margin-right:auto;
+         margin-left:auto;
+         
   }}
-
-
  
- 
+
+   @media screen and (max-width:320px){
+  .profile__info{
+        max-width:480px; 
+         margin-right:auto;
+         margin-left:50px;
+         
+  }}
