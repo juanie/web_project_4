@@ -1,4 +1,4 @@
- .profile__occupation{
+ .profile__description{
    width: 318px;
    font-weight: normal;
     font-size: 18px;
@@ -7,13 +7,13 @@
     flex-basis: 100%;    
   } 
  @media screen and (max-width:765px){
-   .profile__occupation{
+   .profile__description{
    max-width: 380px;
 
    }}
 
     @media screen and (max-width:320px){
-     .profile__occupation{
+     .profile__description{
   font-size:14px;
   line-height:17px;
      }} 
