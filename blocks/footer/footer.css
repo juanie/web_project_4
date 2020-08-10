@@ -1,16 +1,20 @@
-@import url(./__copyright/footer__copyright.css);
+@import url(./__text/footer__text.css);
+@import url(./__container/footer__container.css);
 
 .footer{
- max-width:882px; 
- margin: auto;
-
+    padding-top: 66px;
+    padding-bottom: 60px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #545454;
+    width: 100%;
+    margin: 0 auto;
 }
- @media screen and (max-width:425px)
- { 
- .footer{
-width: 282px;
-font-size:14px;
-line-height:17px;
-
-     }}
-
+@media screen and (max-width: 320px){
+    .footer{
+        padding-top: 48px;
+        padding-bottom: 36px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
