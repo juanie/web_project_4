@@ -15,13 +15,11 @@
     position: fixed;
     text-align: center;
     justify-content: center;
-    top: 148px;
-    left: 0;
     top: 0;
+    left: 0;
     right: 0;
     bottom: 0;
     align-items: center;
-    justify-content: center;
     animation: popupFade 3s;
 }
 .popup_is-open{
@@ -39,9 +37,7 @@
 }
 @media screen and (max-width: 400px){
     .popup{
-        max-width: 100%
+        max-width: 100%;
 
     }
 }
-
-

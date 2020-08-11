@@ -18,13 +18,13 @@
             <section class="profile">
                 <img class="profile__avatar" src="./images/jacques-cousteau.jpg" alt="jacques cousteau">
                 <div class="profile__info">
-      <div class="profile__container">
-                     <h1 class="profile__text_name">Jacques Cousteau</h1>
-                        <button class="profile__edit-button"></button>
+                    <div class="profile__container">
+                        <h1 class="profile__name">Jacques Cousteau</h1>
+                        <button aria-label="Edit"  class="profile__edit-button"></button>
                     </div>
-   <h2 class="profile__text_desc">Explorer</h2>
-    </div>
-         <button aria-label="Add" class="profile__add-button">
+                    <h2 class="profile__desc">Explorer</h2>
+                </div>
+                <button  aria-label="Add"  class="profile__add-button">
                 </button>
             </section>
             <section class="elements">
@@ -49,34 +49,34 @@
         </div>
         <div class="popup popup_type_add-image">
             <div class="popup__container">
-                <button aria-label="Close" class="popup__close-btn popup__close-btn_type_add-image"></button>
+                <button class="popup__close-btn popup__close-btn_type_add-image"></button>
                 <form action="#" class="popup__form popup__form_type_add-image">
                     <h2 class="popup__title popup__title_type_add-image">New Place</h2>
                     <input id="popup__input_image-name" type="text" placeholder="Name" class="popup__input popup__input_image-name"  name="name">
                     <input id="popup__input_url" type="url" placeholder="image-link" class="popup__input popup__input_url" name="link "> 
-                    <Button aria-label="Create" type="submit" class="popup__save popup__save_type_add-image">Create</button>
+                    <button aria-label="Save" type="submit" class="popup__save popup__save_type_add-image">Create</button>
                 </form>
             </div>
         </div>
         <div class="popup popup_type_image">
             <div class="popup__container">
-                <button aria-label="Close"class="popup__close-btn popup__close-btn_type_image"></button>
+                <button aria-label="Close" class="popup__close-btn popup__close-btn_type_image"></button>
                 <figure class="popup__new-container">
-                    <img class="popup__large-image" src="" alt="" id="img-large">
+                    <img class="popup__large-image" alt="" id="img-large">
                     <figcaption class="popup__caption"></figcaption>
                 </figure>
             </div>
         </div>
-       
+        
         <template class="card-template">
             <li class="elements__item">
                     <div class="elements__image">
-                        <button aria-label="Delete" class="elements__delete"></button>
+                        <button aria-label="Delete"  class="elements__delete"></button>
                     </div>
     
                     <div id="title-container" class="elements__container">
                         <h2 class="elements__title"></h2>
-                        <button aria-label="Like" class="elements__heart"></button>
+                        <button  aria-label="Like" class="elements__heart"></button>
                     </div>
             </li>
         </template>

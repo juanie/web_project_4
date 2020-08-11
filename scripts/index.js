@@ -5,13 +5,12 @@ const editProfilepopup = document.querySelector('.popup_type_edit-profile')
 
 const editButton = document.querySelector('.profile__edit-button'); 
 const editCloseButton = document.querySelector('.popup__close-btn_type_edit-profile'); 
-const popup = document.querySelector('.popup'); 
 const editForm = editProfilepopup.querySelector('.popup__form'); 
 const inputName = document.querySelector('.popup__input_name'); 
 const inputDesc = document.querySelector('.popup__input_desc'); 
  
-const profileName = document.querySelector('.profile__text_name'); 
-const profileDesc = document.querySelector('.profile__text_desc'); 
+const profileName = document.querySelector('.profile__name'); 
+const profileDesc = document.querySelector('.profile__desc'); 
 
 //add image 
 const addImageButton = document.querySelector('.profile__add-button');
@@ -22,12 +21,10 @@ const addImageForm = addImagepopup.querySelector('.popup__form');
 const closeAddImage = addImagepopup.querySelector('.popup__close-btn_type_add-image');
 const addImageTitle = addImagepopup.querySelector('.popup__input_image-name');
 const addImageUrl = addImagepopup.querySelector('.popup__input_url');
-const addImageSubmit = addImagepopup.querySelector('.popup__save_type_add-image');
 
-//popup larged image
+//image enlarged
 const imagepopup = document.querySelector('.popup_type_image');
 const closeImagepopup = imagepopup.querySelector('.popup__close-btn_type_image');
-const imagepopupFormer = document.querySelectorAll('.elements__image');
 const popupImg = document.getElementById("img-large");
 const imagepopupEnlarge = imagepopup.querySelector('.popup__large-image');
 const imagepopupCaption = imagepopup.querySelector('.popup__caption');
@@ -69,8 +66,8 @@ const initialCards = [
 
 //functions 
 //open the popup
-function togglepopupWindow(popup){ 
-  popup.classList.toggle('popup_is-open'); 
+function togglepopupWindow(e){ 
+  e.classList.toggle('popup_is-open'); 
 } 
 
 //open the edit profile popup
@@ -83,7 +80,7 @@ editCloseButton.addEventListener('click', () => {
 })
 
 //open the add image popup
-addImageButton.addEventListener('click', (createCard) => {
+addImageButton.addEventListener('click', () => {
   togglepopupWindow(addImagepopup);
 })
 
@@ -120,7 +117,7 @@ editForm.addEventListener('submit', formSubmitHandler);
   })
 
 //create a new card
-function createCard(e) {
+function createCard(data) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImage = cardElement.querySelector('.elements__image');
   const cardTitle = cardElement.querySelector('.elements__title');
@@ -128,8 +125,8 @@ function createCard(e) {
   const deleteCardButton = cardElement.querySelector('.elements__delete');
 
   // image name and image url
-  cardTitle.textContent = e.name;
-  cardImage.style.backgroundImage = `url(${e.link})`;
+  cardTitle.textContent = data.name;
+  cardImage.style.backgroundImage = `url(${data.link})`;
   //like button
 
   clickLike.addEventListener("click", function(e){
@@ -143,8 +140,8 @@ function createCard(e) {
     });
   //Enlarging image
   cardImage.addEventListener('click', () => {
-    imagepopupEnlarge.setAttribute('src', e.link);
-    imagepopupCaption.textContent = e.name;
+    imagepopupEnlarge.setAttribute('src', data.link);
+    imagepopupCaption.textContent = data.name;
     togglepopupWindow(imagepopup);
   })
 
@@ -168,10 +165,3 @@ const addImageHandler = (e) => {
 addImageForm.addEventListener('submit', addImageHandler);
 
 
-//enlarge image once it's being clicked
-
-imagepopupEnlarge.onclick = function(){
-  imagepopup.style.display = "block";
-  popupImg.src = this.src;
-  imagepopupCaption.innerHTML = this.alt;
-}
